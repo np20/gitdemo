@@ -184,7 +184,6 @@ class Client
       $content_type = curl_getinfo($ch, CURLINFO_CONTENT_TYPE);
        if ($curl_error = curl_error($ch)) {
            throw new Exception($curl_error);
-          
        } else {
            $json_decode = json_decode($result, true);
        }
