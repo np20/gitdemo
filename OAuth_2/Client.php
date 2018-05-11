@@ -83,7 +83,7 @@ class Client
        );
 
        //Try catch???
-       $result = $this->executeRequest($tokenEndPointUrl , $parameters, $http_header, self::HTTP_METHOD_POST);
+       $result = $this->executeRequest($tokenEndPointUrl , $parameters, $http_header, self::HTTP_METHOD_GET);
        return $result;
     }
 
