@@ -17,7 +17,7 @@ $redirect_uri = $configs['oauth_redirect_uri'];
 
 $response_type = 'code';
 $state = 'RandomState';
-$include_granted_scope = 'true';
+$include_granted_scope = 'false';
 $grant_type= 'authorization_code';
 //$certFilePath = './Certificate/all.platform.intuit.com.pem';
 $certFilePath = './Certificate/cacert.pem';
@@ -46,12 +46,11 @@ else
       throw new Exception("The state is not correct from Intuit Server. Consider your app is hacked.");
     }
     $result = $client->getAccessToken($tokenEndPointUrl,  $code, $redirect_uri, $grant_type);
-    
     //record them in the session variable
     $_SESSION['access_token'] = $result['access_token'];
     $_SESSION['refresh_token'] = $result['refresh_token'];
 
-
+    //
     // JS to close popup and refresh parent page
     echo '<script type="text/javascript">
                 window.opener.location.href = window.opener.location.href;

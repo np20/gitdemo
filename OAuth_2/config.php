@@ -6,9 +6,9 @@ return array(
   'client_secret' => 'zADHboOn5CMCqVOZvSNSvhkbry8fHg6OqTDvCIBZ', //Example 'R9IttrvneexLcUZbj3bqpmtsu5uD9p7UxNMorpGd',
   'oauth_scope' => 'com.intuit.quickbooks.accounting', //Example 'com.intuit.quickbooks.accounting',
   'openID_scope' => 'openid profile email', //Example 'openid profile email',
-  'oauth_redirect_uri' => 'https://qbdemo1.herokuapp.com/OAuth2PHPExample.php', //Example https://d1eec721.ngrok.io/OAuth_2/OAuth2PHPExample.php',https://developer.intuit.com/v2/OAuth2Playground/RedirectUrl
-  'openID_redirect_uri' => 'https://qbdemo1.herokuapp.com/OAuthOpenIDExample.php',//Example 'https://d1eec721.ngrok.io/OAuth_2/OAuthOpenIDExample.php',
-  'mainPage' => 'https://qbdemo1.herokuapp.com/index.php', //Example https://d1eec721.ngrok.io/OAuth_2/index.php',
-  'refreshTokenPage' => 'https://qbdemo1.herokuapp.com/RefreshToken.php', //Example https://d1eec721.ngrok.io/OAuth_2/RefreshToken.php'
+  'oauth_redirect_uri' => 'https://qbdemo1.herokuapp.com/OAuth_2/OAuth2PHPExample.php', //Example https://d1eec721.ngrok.io/OAuth_2/OAuth2PHPExample.php',https://developer.intuit.com/v2/OAuth2Playground/RedirectUrl
+  'openID_redirect_uri' => 'https://qbdemo1.herokuapp.com/OAuth_2/OAuthOpenIDExample.php',//Example 'https://d1eec721.ngrok.io/OAuth_2/OAuthOpenIDExample.php',
+  'mainPage' => 'https://qbdemo1.herokuapp.com/OAuth_2/index.php', //Example https://d1eec721.ngrok.io/OAuth_2/index.php',
+  'refreshTokenPage' => 'https://qbdemo1.herokuapp.com/OAuth_2/RefreshToken.php', //Example https://d1eec721.ngrok.io/OAuth_2/RefreshToken.php'
 )
  ?>
