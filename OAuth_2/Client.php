@@ -83,7 +83,7 @@ class Client
        );
 
        //Try catch???
-       $result = $this->executeRequest($tokenEndPointUrl , $parameters, $http_header, self::HTTP_METHOD_GET);
+       $result = $this->executeRequest($tokenEndPointUrl , $parameters, $http_header, self::HTTP_METHOD_POST);
        return $result;
     }
 
@@ -113,7 +113,7 @@ class Client
     {
 
       $curl_options = array();
-
+      print_r($curl_options);
       switch($http_method){
             case self::HTTP_METHOD_GET:
               $curl_options[CURLOPT_HTTPGET] = 'true';
