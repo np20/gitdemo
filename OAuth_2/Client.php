@@ -175,7 +175,7 @@ class Client
 
       //Execute the Curl Request
       $result = curl_exec($ch);
-
+      
       $headerSent = curl_getinfo($ch, CURLINFO_HEADER_OUT );
 
       $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
