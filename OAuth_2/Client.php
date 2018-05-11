@@ -113,7 +113,7 @@ class Client
     {
 
       $curl_options = array();
-      print_r($curl_options);
+
       switch($http_method){
             case self::HTTP_METHOD_GET:
               $curl_options[CURLOPT_HTTPGET] = 'true';
@@ -184,6 +184,7 @@ class Client
       $content_type = curl_getinfo($ch, CURLINFO_CONTENT_TYPE);
        if ($curl_error = curl_error($ch)) {
            throw new Exception($curl_error);
+           echo "test";
        } else {
            $json_decode = json_decode($result, true);
        }
