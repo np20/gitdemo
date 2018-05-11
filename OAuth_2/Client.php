@@ -187,7 +187,6 @@ class Client
        } else {
            $json_decode = json_decode($result, true);
        }
-       echo $json_decode;
        curl_close($ch);
 
        //var_dump($json_decode);
