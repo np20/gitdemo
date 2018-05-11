@@ -186,6 +186,7 @@ class Client
            throw new Exception($curl_error);
            echo "test";
        } else {
+          echo "test";
            $json_decode = json_decode($result, true);
        }
        curl_close($ch);
