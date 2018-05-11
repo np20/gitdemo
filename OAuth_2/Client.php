@@ -175,7 +175,7 @@ class Client
 
       //Execute the Curl Request
       $result = curl_exec($ch);
-      echo $result;
+
       $headerSent = curl_getinfo($ch, CURLINFO_HEADER_OUT );
 
       $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
@@ -187,6 +187,7 @@ class Client
        } else {
            $json_decode = json_decode($result, true);
        }
+       echo $json_decode;
        curl_close($ch);
 
        //var_dump($json_decode);
