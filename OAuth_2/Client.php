@@ -192,7 +192,7 @@ class Client
        curl_close($ch);
 
        //var_dump($json_decode);
-    print_r($json_decode);
+       return $json_decode;
     }
 }
  ?>
